@@ -1,6 +1,5 @@
 import React from 'react'
 import { Spinner } from 'react-bootstrap'
-import { useDispatch } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 import {
     withFirebase,

@@ -28,11 +28,37 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.closeMenu{
+  position: absolute;
+    right: 10px;
+    top: 0px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.openMenu {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.openMenu div{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+@media (max-width:1200px){
+  .sidemenu{
+    position: absolute;
+    left: -100%;
+    transition: all 0.5s;
+    z-index: 100;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (min-width:1200px){
+  .desktop, .mobile{
+    display: none;
   }
 }

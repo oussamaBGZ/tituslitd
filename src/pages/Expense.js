@@ -1,6 +1,6 @@
 import React from 'react'
 import { Spinner } from 'react-bootstrap';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useHistory, useParams } from 'react-router-dom';
 import {
     withFirebase,
@@ -17,6 +17,7 @@ function Expense({ firebase: { update } }) {
     const [desc, setDesc] = React.useState(expense.value.desc)
     const [amount, setAmount] = React.useState(expense.value.amount)
     const [expenseState, setExpenseState] = React.useState(expense.value.expenseState)
+
     const handelSubmit = (e) => {
         e.preventDefault()
         setSubmited(true)
